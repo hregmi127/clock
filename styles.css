@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12,2,39);
+    color: gold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.clock{
+    width: 70vmin;
+    height: 70vmin;
+    background-color: rgba(243,246,26,0.7);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    /* background-image: url("clock.webp");
+    background-size: cover; */
+    box-shadow:rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.clock .num{
+    --rotation:0;
+    position: absolute;
+    width: 70vmin;
+    height: 70vmin;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    transform: rotate(var(--rotation));
+    /* font-weight: 900; */
+
+
+}
+.clock .num1{--rotation:30deg;}
+.clock .num2{--rotation:60deg;}
+.clock .num3{--rotation:90deg;}
+.clock .num4{--rotation:120deg;}
+.clock .num5{--rotation:150deg;}
+.clock .num6{--rotation:180deg;}
+.clock .num7{--rotation:210deg;}
+.clock .num8{--rotation:2400deg;}
+.clock .num9{--rotation:270deg;}
+.clock .num10{--rotation:300deg;}
+.clock .num11{--rotation:330deg;}
+
+.desc{
+    margin-top: -340px;
+    font-size: 30px;
+}
+
+.innerCircle{
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background-color: hsla(255,80%,50%,0.3);
+    border-radius: 50%;
+    box-shadow:rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.hr{
+    width: 14px;
+    height: 150px;
+    background-color: rgb(245,203,14);
+    position: absolute;
+    top: 33%;
+    transform-origin: bottom;
+    border-radius: 30%;
+
+}
+
+.min{
+    width: 8px;
+    height: 180px;
+    background-color: rgb(245,203,14);
+    position: absolute;
+    top: 30%;
+    transform-origin: bottom;
+    border-radius: 30%;
+
+}
+.sec{
+    width: 4px;
+    height: 180px;
+    background-color: rgb(245,203,14);
+    position: absolute;
+    top: 30%;
+    transform-origin: bottom;
+    border-radius: 30%;
+
+}
+
+.centerDot{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(38,223,21);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.display{
+    width: 165px;
+    height: 45px;
+    background-color: hsl(36,34%,28%);
+    top: 70%;
+    position: absolute;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-top: 6px;
+    font-weight: 900;
+
+}
